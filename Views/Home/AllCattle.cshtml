@@ -1,0 +1,587 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!-- Ec Shop page -->
+<section class="ec-page-content section-space-p">
+    <div class="container">
+        <div class="row">
+            <div class="ec-shop-rightside col-lg-9 order-lg-last col-md-12 order-md-first margin-b-30">
+                <!-- Shop Top Start -->
+                <div class="ec-pro-list-top d-flex">
+                    <div class="col-md-6 ec-grid-list">
+                        <div class="ec-gl-btn">
+                            <button class="btn btn-grid active"><i class="fi-rr-apps"></i></button>
+                            <button class="btn btn-list"><i class="fi-rr-list"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ec-sort-select">
+                        <span class="sort-by">Sort by</span>
+                        <div class="ec-select-inner">
+                            <select name="ec-select" id="ec-select">
+                                <option >Latest</option>
+                                <option value="1">Oldest</option>
+                                <option value="2">Price: High to Low</option>
+                                <option value="3">Price: Low to High</option>
+                                <option value="4">Weight, High to Low</option>
+                                <option value="5">Weight, Low to High</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shop Top End -->
+                <!-- Shop content Start -->
+                <div class="shop-pro-content">
+                    <div class="shop-pro-inner">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-6 pro-gl-content">
+                                <div class="ec-product-inner">
+                                    <div class="ec-pro-image-outer">
+                                        <div class="ec-pro-image">
+                                            <a href="product-left-sidebar.html" class="image">
+                                                <img class="main-image"
+                                                     src="https://uploads-master.aws.bengalmeat.com/media/cattle-thumbnail/2023/BLF_3645_1.jpg" alt="Product" />
+                                                <img class="hover-image"
+                                                     src="https://uploads-master.aws.bengalmeat.com/media/cattle-thumbnail/2023/BLF_3645_1.jpg" alt="Product" />
+                                            </a>
+                                            
+                                            @*<a href="#" class="quickview" data-link-action="quickview"
+                                               title="Quick view" data-bs-toggle="modal"
+                                               data-bs-target="#ec_quickview_modal"><i class="fi-rr-eye"></i></a>*@
+                                            @*<div class="ec-pro-actions">
+                                                <a href="compare.html" class="ec-btn-group compare"
+                                                   title="Compare"><i class="fi fi-rr-arrows-repeat"></i></a>
+                                                <button title="Add To Cart" class="add-to-cart">
+                                                    <i class="fi-rr-shopping-basket"></i> Add To Cart
+                                                </button>
+                                                <a class="ec-btn-group wishlist" title="Wishlist">
+                                                    <i class="fi-rr-heart"></i>
+                                                </a>
+                                            </div>*@
+                                        </div>
+                                    </div>
+                                    <div class="ec-pro-content">
+                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Male Bull</a></h5>
+                                        <div class="ec-pro-rating">
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star"></i>
+                                        </div>
+                                        <div class="ec-pro-list-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dutmmy text ever since the 1500s, when an unknown printer took a galley.</div>
+                                        <span class="ec-price">
+                                            <span class="old-price">185000 BDT</span>
+                                            <span class="new-price">200000 BDT</span>
+                                        </span>
+                                       @* <div class="ec-pro-option">
+                                            <div class="ec-pro-color">
+                                                <span class="ec-pro-opt-label">Color</span>
+                                                <ul class="ec-opt-swatch ec-change-img">
+                                                    <li class="active">
+                                                        <a href="#" class="ec-opt-clr-img"
+                                                           data-src="~/assets/images/product-image/6_1.jpg"
+                                                           data-src-hover="~/assets/images/product-image/6_1.jpg"
+                                                           data-tooltip="Gray">
+                                                            <span style="background-color:#e8c2ff;"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-clr-img"
+                                                           data-src="~/assets/images/product-image/6_2.jpg"
+                                                           data-src-hover="~/assets/images/product-image/6_2.jpg"
+                                                           data-tooltip="Orange">
+                                                            <span style="background-color:#9cfdd5;"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ec-pro-size">
+                                                <span class="ec-pro-opt-label">Size</span>
+                                                <ul class="ec-opt-size">
+                                                    <li class="active">
+                                                        <a href="#" class="ec-opt-sz"
+                                                           data-old="$25.00" data-new="$20.00"
+                                                           data-tooltip="Small">S</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-sz" data-old="$27.00"
+                                                           data-new="$22.00" data-tooltip="Medium">M</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-sz" data-old="$30.00"
+                                                           data-new="$25.00" data-tooltip="Large">X</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-sz" data-old="$35.00"
+                                                           data-new="$30.00" data-tooltip="Extra Large">XL</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-6 pro-gl-content">
+                                <div class="ec-product-inner">
+                                    <div class="ec-pro-image-outer">
+                                        <div class="ec-pro-image">
+                                            <a href="product-left-sidebar.html" class="image">
+                                                <img class="main-image"
+                                                     src="https://uploads-master.aws.bengalmeat.com/media/cattle-thumbnail/2023/BLF_3650_1.jpg" alt="Product" />
+                                                <img class="hover-image"
+                                                     src="https://uploads-master.aws.bengalmeat.com/media/cattle-thumbnail/2023/BLF_3650_1.jpg" alt="Product" />
+                                            </a>
+                                            @*<span class="percentage">20%</span>*@
+                                           @* <span class="flags">
+                                                <span class="sale">Sale</span>
+                                            </span>*@
+                                            @*<a href="#" class="quickview" data-link-action="quickview"
+                                               title="Quick view" data-bs-toggle="modal"
+                                               data-bs-target="#ec_quickview_modal"><i class="fi-rr-eye"></i></a>
+                                            <div class="ec-pro-actions">
+                                                <a href="compare.html" class="ec-btn-group compare"
+                                                   title="Compare"><i class="fi fi-rr-arrows-repeat"></i></a>
+                                                <button title="Add To Cart" class="add-to-cart">
+                                                    <i class="fi-rr-shopping-basket"></i> Add To Cart
+                                                </button>
+                                                <a class="ec-btn-group wishlist" title="Wishlist">
+                                                    <i class="fi-rr-heart"></i>
+                                                </a>
+                                            </div>*@
+                                        </div>
+                                    </div>
+                                    <div class="ec-pro-content">
+                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Male Bull</a></h5>
+                                        <div class="ec-pro-rating">
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star"></i>
+                                        </div>
+                                        <div class="ec-pro-list-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dutmmy text ever since the 1500s, when an unknown printer took a galley.</div>
+                                        <span class="ec-price">
+                                            <span class="old-price">185000 BDT</span>
+                                            <span class="new-price">200000 BDT</span>
+                                        </span>
+                                        @*<div class="ec-pro-option">
+                                            <div class="ec-pro-color">
+                                                <span class="ec-pro-opt-label">Color</span>
+                                                <ul class="ec-opt-swatch ec-change-img">
+                                                    <li class="active">
+                                                        <a href="#" class="ec-opt-clr-img"
+                                                           data-src="~/assets/images/product-image/7_1.jpg"
+                                                           data-src-hover="~/assets/images/product-image/7_1.jpg"
+                                                           data-tooltip="Gray">
+                                                            <span style="background-color:#01f1f1;"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-clr-img"
+                                                           data-src="~/assets/images/product-image/7_2.jpg"
+                                                           data-src-hover="~/assets/images/product-image/7_2.jpg"
+                                                           data-tooltip="Orange">
+                                                            <span style="background-color:#b89df8;"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ec-pro-size">
+                                                <span class="ec-pro-opt-label">Size</span>
+                                                <ul class="ec-opt-size">
+                                                    <li class="active">
+                                                        <a href="#" class="ec-opt-sz"
+                                                           data-old="$12.00" data-new="$10.00"
+                                                           data-tooltip="Small">S</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-sz" data-old="$15.00"
+                                                           data-new="$12.00" data-tooltip="Medium">M</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-sz" data-old="$18.00"
+                                                           data-new="$15.00" data-tooltip="Large">X</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-sz" data-old="$20.00"
+                                                           data-new="$17.00" data-tooltip="Extra Large">XL</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-6 pro-gl-content">
+                                <div class="ec-product-inner">
+                                    <div class="ec-pro-image-outer">
+                                        <div class="ec-pro-image">
+                                            <a href="product-left-sidebar.html" class="image">
+                                                <img class="main-image"
+                                                     src="https://uploads-master.aws.bengalmeat.com/media/cattle-thumbnail/2023/BLF_3643_1.jpg" alt="Product" />
+                                                <img class="hover-image"
+                                                     src="https://uploads-master.aws.bengalmeat.com/media/cattle-thumbnail/2023/BLF_3643_1.jpg" alt="Product" />
+                                            </a>
+                                            @*<span class="percentage">20%</span>*@
+                                            @*<span class="flags">
+                                                <span class="sale">Sale</span>
+                                            </span>*@
+                                            @*<a href="#" class="quickview" data-link-action="quickview"
+                                               title="Quick view" data-bs-toggle="modal"
+                                               data-bs-target="#ec_quickview_modal"><i class="fi-rr-eye"></i></a>
+                                            <div class="ec-pro-actions">
+                                                <a href="compare.html" class="ec-btn-group compare"
+                                                   title="Compare"><i class="fi fi-rr-arrows-repeat"></i></a>
+                                                <button title="Add To Cart" class="add-to-cart">
+                                                    <i class="fi-rr-shopping-basket"></i> Add To Cart
+                                                </button>
+                                                <a class="ec-btn-group wishlist" title="Wishlist">
+                                                    <i class="fi-rr-heart"></i>
+                                                </a>
+                                            </div>*@
+                                        </div>
+                                    </div>
+                                    <div class="ec-pro-content">
+                                        <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Deshi bull</a></h5>
+                                        <div class="ec-pro-rating">
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star fill"></i>
+                                            <i class="ecicon eci-star"></i>
+                                        </div>
+                                        <div class="ec-pro-list-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dutmmy text ever since the 1500s, when an unknown printer took a galley.</div>
+                                        <span class="ec-price">
+                                            <span class="old-price">185000 BDT</span>
+                                            <span class="new-price">200000 BDT</span>
+                                        </span>
+                                        @*<div class="ec-pro-option">
+                                            <div class="ec-pro-color">
+                                                <span class="ec-pro-opt-label">Color</span>
+                                                <ul class="ec-opt-swatch ec-change-img">
+                                                    <li class="active">
+                                                        <a href="#" class="ec-opt-clr-img"
+                                                           data-src="~/assets/images/product-image/1_1.jpg"
+                                                           data-src-hover="~/assets/images/product-image/1_1.jpg"
+                                                           data-tooltip="Gray">
+                                                            <span style="background-color:#90cdf7;"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-clr-img"
+                                                           data-src="~/assets/images/product-image/1_2.jpg"
+                                                           data-src-hover="~/assets/images/product-image/1_2.jpg"
+                                                           data-tooltip="Orange">
+                                                            <span style="background-color:#ff3b66;"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-clr-img"
+                                                           data-src="~/assets/images/product-image/1_3.jpg"
+                                                           data-src-hover="~/assets/images/product-image/1_3.jpg"
+                                                           data-tooltip="Green">
+                                                            <span style="background-color:#ffc476;"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-clr-img"
+                                                           data-src="~/assets/images/product-image/1_4.jpg"
+                                                           data-src-hover="~/assets/images/product-image/1_4.jpg"
+                                                           data-tooltip="Sky Blue">
+                                                            <span style="background-color:#1af0ba;"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="ec-pro-size">
+                                                <span class="ec-pro-opt-label">Size</span>
+                                                <ul class="ec-opt-size">
+                                                    <li class="active">
+                                                        <a href="#" class="ec-opt-sz"
+                                                           data-old="$40.00" data-new="$30.00"
+                                                           data-tooltip="Small">S</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="ec-opt-sz" data-old="$50.00"
+                                                           data-new="$40.00" data-tooltip="Medium">M</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>*@
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Ec Pagination Start -->
+                    <div class="ec-pro-pagination">
+                        <span>Showing 1-12 of 21 item(s)</span>
+                        <ul class="ec-pro-pagination-inner">
+                            <li><a class="active" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a class="next" href="#">Next <i class="ecicon eci-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+                    <!-- Ec Pagination End -->
+                </div>
+                <!--Shop content End -->
+            </div>
+            <!-- Sidebar Area Start -->
+            <div class="ec-shop-leftside col-lg-3 order-lg-first col-md-12 order-md-last">
+                <div id="shop_sidebar">
+                    <div class="ec-sidebar-heading">
+                        <h1>Filter Products By</h1>
+                    </div>
+                    <div class="ec-sidebar-wrap">
+
+                        <!-- Sidebar Price Block -->
+                        <div class="ec-sidebar-block">
+                            <div class="ec-sb-title">
+                                <h3 class="ec-sidebar-title">Price</h3>
+                            </div>
+                            <div class="ec-sb-block-content es-price-slider">
+                                <div class="ec-price-filter">
+                                    <div id="ec-sliderPrice" class="filter__slider-price" data-min="৳ 50000"
+                                         data-max="৳ 800000" data-step="10"></div>
+                                    <div class="ec-price-input">
+                                        <label class="filter__label">
+                                            <input type="text"
+                                                   class="filter__input">
+                                        </label>
+                                        <span class="ec-price-divider"></span>
+                                        <label class="filter__label">
+                                            <input type="text"
+                                                   class="filter__input">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <!-- Sidebar Weight Block -->
+                        <div class="ec-sidebar-block">
+                            <div class="ec-sb-title">
+                                <h3 class="ec-sidebar-title">Weight</h3>
+                            </div>
+                            <div class="ec-sb-block-content es-price-slider">
+                                <div class="ec-price-filter">
+                                    <div id="ec-sliderPrice" class="filter__slider-price" data-min="৳ 50000"
+                                         data-max="৳ 800000" data-step="10"></div>
+                                    <div class="ec-price-input">
+                                        <label class="filter__label">
+                                            <input type="text"
+                                                   class="filter__input">
+                                        </label>
+                                        <span class="ec-price-divider"></span>
+                                        <label class="filter__label">
+                                            <input type="text"
+                                                   class="filter__input">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <!-- Sidebar Category Block -->
+                        <div class="ec-sidebar-block">
+                            <div class="ec-sb-title">
+                                <h3 class="ec-sidebar-title">Gender</h3>
+                            </div>
+                            <div class="ec-sb-block-content">
+                                <ul>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" checked /> <a href="#">Male - Bull</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" /> <a href="#">Male - Steer</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" /> <a href="#">Female - Heifer</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                   </ul> 
+                            </div>
+                        </div>
+                        <!-- Sidebar Size Block -->
+                        <div class="ec-sidebar-block">
+                            <div class="ec-sb-title">
+                                <h3 class="ec-sidebar-title">Size</h3>
+                            </div>
+                            <div class="ec-sb-block-content">
+                                <ul>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" checked /><a href="#">Minimum</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Medium</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /> <a href="#">Large</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Extra Large</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <hr />
+
+                         <!-- Sidebar Color Block -->
+                        <div class="ec-sidebar-block">
+                            <div class="ec-sb-title">
+                                <h3 class="ec-sidebar-title">Color</h3>
+                            </div>
+                            <div class="ec-sb-block-content">
+                                <ul>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" checked /><a href="#">Black</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">White</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /> <a href="#">Red</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Cross Red</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Cross Non Red</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Non Red</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <hr />
+
+                         <!-- Sidebar Breed Block -->
+                        <div class="ec-sidebar-block">
+                            <div class="ec-sb-title">
+                                <h3 class="ec-sidebar-title">Breed</h3>
+                            </div>
+                            <div class="ec-sb-block-content">
+                                <ul>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" checked /><a href="#">Brahma</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Holstein Cross</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /> <a href="#">Local</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Mir Kadim</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Pabna Breed</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Red Chittagong</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Sahiwal</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Sindhi</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr />
+
+                        <!-- Sidebar Age Block -->
+                        <div class="ec-sidebar-block">
+                            <div class="ec-sb-title">
+                                <h3 class="ec-sidebar-title">Age</h3>
+                            </div>
+                            <div class="ec-sb-block-content">
+                                <ul>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" checked /><a href="#">2 years</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">2.5 years</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /> <a href="#">3 years</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sidebar-block-item">
+                                            <input type="checkbox" value="" /><a href="#">Extra Large</a><span class="checked"></span>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <hr />
+                        
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Shop page -->

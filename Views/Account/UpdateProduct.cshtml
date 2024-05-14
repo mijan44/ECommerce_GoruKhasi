@@ -1,0 +1,338 @@
+﻿@{
+	string FarmerID = Context.Request.Cookies["FarmerID"];
+	string FarmerPhone = Context.Request.Cookies["PhoneNumber"];
+
+}
+
+
+@foreach (Model.Product details in Model.Product)
+{
+	ViewData["Title"] = "Update";
+	Layout = "~/Views/Shared/_AccountLayout.cshtml";
+	<!-- PAGE WRAPPER -->
+	<div class="ec-page-wrapper">
+
+
+
+		<!-- CONTENT WRAPPER -->
+		<div class="ec-content-wrapper">
+			<div class="content">
+				<div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
+					<div>
+						<h1></h1>
+						<p class="breadcrumbs">
+							<span><a asp-controller="Account" asp-action="Dashboard">Home</a></span>
+							<span><i class="mdi mdi-chevron-right"></i></span>Update Product
+						</p>
+					</div>
+					<div>
+						<a asp-controller="Account" asp-action="Inventory" class="btn btn-primary">
+							View All
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="card card-default">
+							<div class="card-header card-header-border-bottom">
+								<h2>Update Product</h2>
+							</div>
+
+
+							<div class="card-body">
+								<div class="row ec-vendor-uploads">
+									<div class="col-lg-4">
+										<div class="ec-vendor-img-upload">
+											<div class="ec-vendor-main-img">
+												<div class="avatar-upload">
+													<div class="avatar-edit">
+														<input type='file' id="imageUpload" class="ec-image-upload"
+															   accept=".png, .jpg, .jpeg" />
+														<label for="imageUpload">
+															<img src="~/dashboard/assets/img/icons/edit.svg"
+																 class="svg_img header_svg" alt="edit" />
+														</label>
+													</div>
+													<div class="avatar-preview ec-preview">
+														<div class="imagePreview ec-div-preview">
+															<img class="ec-image-preview"
+																 src="~/dashboard/assets/img/products/vender-upload-preview.jpg"
+																 alt="edit" />
+														</div>
+													</div>
+												</div>
+												<div class="thumb-upload-set colo-md-12">
+													<div class="thumb-upload">
+														<div class="thumb-edit">
+															<input type='file' id="thumbUpload01"
+																   class="ec-image-upload"
+																   accept=".png, .jpg, .jpeg" />
+															<label for="imageUpload">
+																<img src="~/dashboard/assets/img/icons/edit.svg"
+																	 class="svg_img header_svg" alt="edit" />
+															</label>
+														</div>
+														<div class="thumb-preview ec-preview">
+															<div class="image-thumb-preview">
+																<img class="image-thumb-preview ec-image-preview"
+																	 src="~/dashboard/assets/img/products/vender-upload-thumb-preview.jpg"
+																	 alt="edit" />
+															</div>
+														</div>
+													</div>
+													<div class="thumb-upload">
+														<div class="thumb-edit">
+															<input type='file' id="thumbUpload02"
+																   class="ec-image-upload"
+																   accept=".png, .jpg, .jpeg" />
+															<label for="imageUpload">
+																<img src="~/dashboard/assets/img/icons/edit.svg"
+																	 class="svg_img header_svg" alt="edit" />
+															</label>
+														</div>
+														<div class="thumb-preview ec-preview">
+															<div class="image-thumb-preview">
+																<img class="image-thumb-preview ec-image-preview"
+																	 src="~/dashboard/assets/img/products/vender-upload-thumb-preview.jpg"
+																	 alt="edit" />
+															</div>
+														</div>
+													</div>
+													<div class="thumb-upload">
+														<div class="thumb-edit">
+															<input type='file' id="thumbUpload03"
+																   class="ec-image-upload"
+																   accept=".png, .jpg, .jpeg" />
+															<label for="imageUpload">
+																<img src="~/dashboard/assets/img/icons/edit.svg"
+																	 class="svg_img header_svg" alt="edit" />
+															</label>
+														</div>
+														<div class="thumb-preview ec-preview">
+															<div class="image-thumb-preview">
+																<img class="image-thumb-preview ec-image-preview"
+																	 src="~/dashboard/assets/img/products/vender-upload-thumb-preview.jpg"
+																	 alt="edit" />
+															</div>
+														</div>
+													</div>
+													<div class="thumb-upload">
+														<div class="thumb-edit">
+															<input type='file' id="thumbUpload04"
+																   class="ec-image-upload"
+																   accept=".png, .jpg, .jpeg" />
+															<label for="imageUpload">
+																<img src="~/dashboard/assets/img/icons/edit.svg"
+																	 class="svg_img header_svg" alt="edit" />
+															</label>
+														</div>
+														<div class="thumb-preview ec-preview">
+															<div class="image-thumb-preview">
+																<img class="image-thumb-preview ec-image-preview"
+																	 src="~/dashboard/assets/img/products/vender-upload-thumb-preview.jpg"
+																	 alt="edit" />
+															</div>
+														</div>
+													</div>
+													<div class="thumb-upload">
+														<div class="thumb-edit">
+															<input type='file' id="thumbUpload05"
+																   class="ec-image-upload"
+																   accept=".png, .jpg, .jpeg" />
+															<label for="imageUpload">
+																<img src="~/dashboard/assets/img/icons/edit.svg"
+																	 class="svg_img header_svg" alt="edit" />
+															</label>
+														</div>
+														<div class="thumb-preview ec-preview">
+															<div class="image-thumb-preview">
+																<img class="image-thumb-preview ec-image-preview"
+																	 src="~/dashboard/assets/img/products/vender-upload-thumb-preview.jpg"
+																	 alt="edit" />
+															</div>
+														</div>
+													</div>
+													<div class="thumb-upload">
+														<div class="thumb-edit">
+															<input type='file' id="thumbUpload06"
+																   class="ec-image-upload"
+																   accept=".png, .jpg, .jpeg" />
+															<label for="imageUpload">
+																<img src="~/dashboard/assets/img/icons/edit.svg"
+																	 class="svg_img header_svg" alt="edit" />
+															</label>
+														</div>
+														<div class="thumb-preview ec-preview">
+															<div class="image-thumb-preview">
+																<img class="image-thumb-preview ec-image-preview"
+																	 src="~/dashboard/assets/img/products/vender-upload-thumb-preview.jpg"
+																	 alt="edit" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-8">
+										<div class="ec-vendor-upload-detail">
+
+
+											<form method="post" class="row g-3">
+												<div class="col-md-6">
+													<label for="inputEmail4" class="form-label">Product name</label>
+													<input type="text" name="ProductName" value="@details.ProductName" class="form-control slug-title" id="inputEmail4">
+												</div>
+												<div class="col-md-6 mb-25">
+													<label class="form-label">Type</label>
+													<div class="form-checkbox-box">
+														<div class="form-check form-check-inline">
+															<input type="checkbox" name="ProductType" value="Cattle" @(details.ProductType == "Cattle" ? "checked" : "")>
+															<label>Cattle</label>
+														</div>
+
+														<div class="form-check form-check-inline">
+															<input type="checkbox" name="ProductType" value="Goat" @(details.ProductType == "Goat" ? "checked" : "")>
+															<label>Goat</label>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="col-md-12">
+													<label class="form-label">Short Details</label>
+													<textarea class="form-control" value="@details.ShortDetails" name="ShortDetails" rows="2">@details.ShortDetails</textarea>
+												</div>
+												<div class="col-md-12">
+													<label class="form-label">Description</label>
+													<textarea class="form-control" value="@details.Description" name="Description" rows="2">@details.Description</textarea>
+												</div>
+
+												<div class="col-md-6">
+													<label class="form-label">
+														Price <span>
+
+														</span>
+													</label>
+													<input type="number" value="@details.Price" name="Price" class="form-control" id="price1">
+												</div>
+												<div class="col-md-6">
+													<label class="form-label">Discount</label>
+													<input type="number" name="Discount" value="@details.Discount" class="form-control" id="quantity1">
+												</div>
+
+												<div class="col-md-4 mb-25">
+													<label class="form-label">Age</label>
+													<input type="text" name="Age" value="@details.Age" class="form-control slug-title" id="inputEmail4">
+												</div>
+
+												<div class="col-md-4 mb-25">
+													<label class="form-label">Breed</label>
+													<input type="text" name="Breed" value="@details.Breed" class="form-control slug-title" id="inputEmail4">
+												</div>
+
+												<div class="col-md-4 mb-25">
+													<label class="form-label">Weight</label>
+													<input type="text" name="Weight" value="@details.Weight" class="form-control slug-title" id="inputEmail4">
+												</div>
+
+												<div class="col-md-4 mb-25">
+													<label class="form-label">Color</label>
+													<input type="text" name="Color" value="@details.Color" class="form-control slug-title" id="inputEmail4">
+												</div>
+												<div class="col-md-8 mb-25">
+													<label class="form-label">Size</label>
+													<div class="form-checkbox-box">
+														<div class="form-check form-check-inline">
+															<input type="checkbox" name="Size" value="Minimum" @(details.Size == "Minimum" ? "checked" : "")>
+															<label>Minimum</label>
+														</div>
+														<div class="form-check form-check-inline">
+															<input type="checkbox" name="Size" value="Medium" @(details.Size == "Medium" ? "checked" : "")>
+															<label>Medium</label>
+														</div>
+														<div class="form-check form-check-inline">
+															<input type="checkbox" name="Size" value="Large" @(details.Size == "Large" ? "checked" : "")>
+															<label>Large</label>
+														</div>
+														<div class="form-check form-check-inline">
+															<input type="checkbox" name="Size" value="ExtraLarge" @(details.Size == "ExtraLarge" ? "checked" : "")>
+															<label>Extra Large</label>
+														</div>
+
+
+													</div>
+												</div>
+
+												<div class="col-md-4 mb-25">
+													<label class="form-label">FeedLotDuration</label>
+													<input type="text" value="@details.FeedLotDuration" name="FeedLotDuration" class="form-control slug-title" id="inputEmail4">
+												</div>
+
+												<div class="col-md-4 mb-25">
+													<label class="form-label">Gender</label>
+													<input type="text" value="@details.Gender" name="Gender" class="form-control slug-title" id="inputEmail4">
+												</div>
+
+												<div class="col-md-4 mb-25">
+													<label class="form-label">Feed Management</label>
+													<input type="text" value="@details.FeedManagement" name="FeedManagement" class="form-control slug-title" id="inputEmail4">
+												</div>
+
+												<div class="col-md-4 mb-25">
+													<label class="form-label">No Of Teeth</label>
+													<input type="text" value="@details.NoOfTeeth" name="NoOfTeeth" class="form-control slug-title" id="inputEmail4">
+												</div>
+												<div class="col-md-4 mb-25">
+													<label class="form-label">Height</label>
+													<input type="text" value="@details.Height" name="Height" class="form-control slug-title" id="inputEmail4">
+												</div>
+
+												@*<div class="col-md-6">
+											<label class="form-label">
+											Order Amount <span>
+
+											</span>
+											</label>
+											<input type="number" class="form-control" id="price1">
+											</div>
+											<div class="col-md-6">
+											<label class="form-label">Percentage</label>
+											<input type="number" class="form-control" id="quantity1">
+											</div>*@
+
+												<div class="col-md-12">
+													<input type="text" name="ProductID" value="@details.ProductID" hidden>
+													<input type="text" name="FarmerID" value="@details.FarmerID" hidden>
+													<button type="submit" asp-controller="Account" asp-action="UpdateRequestProduct" class="btn btn-primary">Update</button>
+												</div>
+											</form>
+
+
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End Content -->
+		</div> <!-- End Content Wrapper -->
+
+
+	</div> <!-- End Page Wrapper -->
+}
+
+
+
+
+
+
+
+
+
+	
